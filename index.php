@@ -3,7 +3,7 @@
 class Square {
   public $lato;
 
-  function __construct($lato){
+  public function __construct($lato){
     $this-> lato = $lato;
   }
   public function area(){
@@ -20,6 +20,7 @@ class Square {
 }
 
   class Cube extends Square{
+    
     public function vol(){
       return parent::area() * $this -> lato;
     }
