@@ -25,10 +25,10 @@ class Square {
 class Cube extends Square{
 
   public function vol(){
-    return parent::area() * $this -> lato;
+    return $this-> area() * $this -> lato;
   }
   public function superf(){
-    return 6 * parent::area();
+    return 6 * $this-> area();
   }
   public function str()  {
   return "Volume : ". $this -> vol(). "<br>"
